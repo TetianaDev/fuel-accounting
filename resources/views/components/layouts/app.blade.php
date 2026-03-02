@@ -16,15 +16,19 @@
 
     @fluxAppearance
 </head>
-<body class="min-h-screen bg-zinc-800 antialiased">
+<body class="min-h-screen bg-zinc-800 antialiased relative">
     <flux:header container class="bg-zinc-50 dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-700">
         <flux:sidebar.toggle class="lg:hidden" icon="bars-3" inset="left" />
         <flux:navbar class="-mb-px max-lg:hidden">
             <flux:navbar.item icon="home" href="/">Головна</flux:navbar.item>
             <flux:navbar.item href="/company-info">Дані компанії</flux:navbar.item>
-            <flux:navbar.item href="#">ТЗ та спецтехніка</flux:navbar.item>
-            <flux:navbar.item href="#">Внесення даних по пальному</flux:navbar.item>
-            <flux:navbar.item href="#">Звіт по використанню палива</flux:navbar.item>
+            <flux:navbar.item href="/assets">ТЗ та спецтехніка</flux:navbar.item>
+            <flux:navbar.item href="#">Звіт по пальному (ТЗ)</flux:navbar.item>
+            <flux:navbar.item href="#">Звіт по пальному (спецтехніка)</flux:navbar.item>
+            <flux:navbar.item href="#">Звіт використання палива</flux:navbar.item>
+            <flux:navbar.item href="#">Пробіг автомобілів</flux:navbar.item>
+            <flux:navbar.item href="#">Зведена відомість списання палива</flux:navbar.item>
+            <flux:navbar.item href="#">Подорожній лист</flux:navbar.item>
         </flux:navbar>
     </flux:header>
     <flux:sidebar sticky collapsible="mobile" class="lg:hidden bg-zinc-50 dark:bg-zinc-900 border-r border-zinc-200 dark:border-zinc-700">
@@ -33,10 +37,14 @@
         </flux:sidebar.header>
         <flux:sidebar.nav>
             <flux:sidebar.item icon="home" href="/">Головна</flux:sidebar.item>
-            <flux:sidebar.item href="#">Дані компанії</flux:sidebar.item>
-            <flux:sidebar.item href="#">ТЗ та спецтехніка</flux:sidebar.item>
-            <flux:sidebar.item href="#">Внесення даних по пальному</flux:sidebar.item>
-            <flux:sidebar.item href="#">Звіт по використанню палива</flux:sidebar.item>
+            <flux:sidebar.item href="/company-info">Дані компанії</flux:sidebar.item>
+            <flux:sidebar.item href="/assets">ТЗ та спецтехніка</flux:sidebar.item>
+            <flux:sidebar.item href="#">Звіт по пальному (ТЗ)</flux:sidebar.item>
+            <flux:sidebar.item href="#">Звіт по пальному (спецтехніка)</flux:sidebar.item>
+            <flux:sidebar.item href="#">Звіт використання палива</flux:sidebar.item>
+            <flux:sidebar.item href="#">Пробіг автомобілів</flux:sidebar.item>
+            <flux:sidebar.item href="#">Зведена відомість списання палива</flux:sidebar.item>
+            <flux:sidebar.item href="#">Подорожній лист</flux:sidebar.item>
         </flux:sidebar.nav>
     </flux:sidebar>
     <flux:main container>
