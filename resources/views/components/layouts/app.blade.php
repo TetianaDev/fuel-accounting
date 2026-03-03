@@ -23,7 +23,7 @@
             <flux:navbar.item icon="home" href="/">Головна</flux:navbar.item>
             <flux:navbar.item href="/company-info">Дані компанії</flux:navbar.item>
             <flux:navbar.item href="/assets">ТЗ та спецтехніка</flux:navbar.item>
-            <flux:navbar.item href="#">Звіт по пальному (ТЗ)</flux:navbar.item>
+            <flux:navbar.item href="/fuel-vehicle">Звіт по пальному (ТЗ)</flux:navbar.item>
             <flux:navbar.item href="#">Звіт по пальному (спецтехніка)</flux:navbar.item>
             <flux:navbar.item href="#">Звіт використання палива</flux:navbar.item>
             <flux:navbar.item href="#">Пробіг автомобілів</flux:navbar.item>
@@ -39,7 +39,7 @@
             <flux:sidebar.item icon="home" href="/">Головна</flux:sidebar.item>
             <flux:sidebar.item href="/company-info">Дані компанії</flux:sidebar.item>
             <flux:sidebar.item href="/assets">ТЗ та спецтехніка</flux:sidebar.item>
-            <flux:sidebar.item href="#">Звіт по пальному (ТЗ)</flux:sidebar.item>
+            <flux:sidebar.item href="/fuel-vehicle">Звіт по пальному (ТЗ)</flux:sidebar.item>
             <flux:sidebar.item href="#">Звіт по пальному (спецтехніка)</flux:sidebar.item>
             <flux:sidebar.item href="#">Звіт використання палива</flux:sidebar.item>
             <flux:sidebar.item href="#">Пробіг автомобілів</flux:sidebar.item>

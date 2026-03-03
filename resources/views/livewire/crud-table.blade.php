@@ -17,7 +17,13 @@
                 @forelse ($records as $record)
                     <tr class="bg-zinc-800 hover:bg-zinc-750">
                         @foreach ($columns as $column)
-                            <td class="px-4 py-3">{{ $record->{$column['key']} }}</td>
+                            @php
+                                $cellValue = $record->{$column['key']};
+                                if (is_string($cellValue) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $cellValue)) {
+                                    $cellValue = \Carbon\Carbon::createFromFormat('Y-m-d', $cellValue)->format('d.m.Y');
+                                }
+                            @endphp
+                            <td class="px-4 py-3">{{ $cellValue }}</td>
                         @endforeach
                         <td class="px-4 py-3">
                             <div class="flex gap-2 justify-end">

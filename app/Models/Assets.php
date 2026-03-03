@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Assets extends Model {
     protected $table = 'assets';
@@ -24,4 +25,13 @@ class Assets extends Model {
         'intake_date',
         'decommissioning_date',
     ];
+
+    public function fuelVehicle(): HasMany {
+        return $this->hasMany(FuelVehicle::class, 'asset_id');
+    }
+
+    public function fuelEquipment(): HasMany {
+        return $this->hasMany(FuelEquipment::class, 'asset_id');
+    }
+
 }
